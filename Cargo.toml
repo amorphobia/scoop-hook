@@ -1,0 +1,23 @@
+[package]
+name = "scoop-hook"
+version = "0.1.0"
+edition = "2021"
+description = "Hook your scoop subcommands in your $env:PATH"
+license = "AGPL-3.0-or-later"
+repository = "https://github.com/amorphobia/scoop-hook"
+keywords = ["cli"]
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[package.metadata.binstall]
+pkg-url = "{ repo }/releases/download/v{ version }/{ name }-{ target }.{ archive-format }"
+bin-dir = "{ bin }{ binary-ext }"
+
+[package.metadata.binstall.overrides.i686-pc-windows-msvc]
+pkg-fmt = "zip"
+
+[package.metadata.binstall.overrides.x86_64-pc-windows-msvc]
+pkg-fmt = "zip"
