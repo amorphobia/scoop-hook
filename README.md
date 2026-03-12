@@ -8,7 +8,7 @@ Inspired by [`scoop-search`](https://github.com/shilangyu/scoop-search)
 
 A hook provided by `scoop-search` can make `scoop search` sub-command to call `scoop-search.exe` binary. However, it will not work if you get some other sub-commands in the future.
 
-This tool can dynamicly find all executables named as `scoop-<sub-command>.exe` in folders listed in the environment variable `$env:PATH`, and execute them as a sub-command of scoop.
+This tool can dynamically find executables named `scoop-<sub-command>.exe` or `scoop-<sub-command>.ps1` in folders listed in the environment variable `$env:PATH`, and execute them as a sub-command of scoop. The `.exe` takes priority over `.ps1` if both exist.
 
 Please open an issue or pull request if it does not work for you.
 
