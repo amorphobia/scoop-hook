@@ -1,6 +1,6 @@
 [package]
 name = "scoop-hook"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 description = "Hook your scoop subcommands in your $env:PATH"
 license = "AGPL-3.0-or-later"
